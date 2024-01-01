@@ -1,23 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import CodeExecutor from './components/testExecutor';
+import BlocklyComponent from './components/blocklyComponent';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>JavaScript Code Executor</h1>
+      <CodeExecutor />
+      <h2>Blockly</h2>
+      <BlocklyComponent />
     </div>
   );
 }
