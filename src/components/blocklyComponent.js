@@ -4,9 +4,8 @@ import Blockly from 'blockly';
 import { useState } from 'react';
 import { javascriptGenerator } from 'blockly/javascript';
 
-function MyBlocklyEditor() {
+function MyBlocklyEditor({ setGeneratedCode }) {
     const [xml, setXml] = useState();
-    const [generatedCode, setGeneratedCode] = useState('');
 
     var MY_TOOLBOX = {
         "kind": "categoryToolbox",
@@ -53,11 +52,6 @@ function MyBlocklyEditor() {
                 onXmlChange={setXml}
             />
             <button onClick={generateJavaScript}>Generate JavaScript</button>
-            <div className="container">
-                <div className="notification">
-                    <pre>{generatedCode}</pre>
-                </div>
-            </div>
         </div>
     );
 }
