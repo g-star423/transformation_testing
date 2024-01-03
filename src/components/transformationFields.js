@@ -19,7 +19,7 @@ const TransformationFields = ({ fieldValues, setFieldValues }) => {
     };
 
     useEffect(() => {
-        // console.log(selectedFields);
+        console.log(selectedFields);
     }, [selectedFields]);
 
     const transformationFields = [

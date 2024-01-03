@@ -7,7 +7,10 @@ import { javascriptGenerator } from 'blockly/javascript';
 function MyBlocklyEditor({ setGeneratedCode }) {
     const [xml, setXml] = useState();
 
-    var MY_TOOLBOX = {
+
+
+
+    let MY_TOOLBOX = {
         "kind": "categoryToolbox",
         "contents": [
             {
